@@ -1,0 +1,10 @@
+[package]
+name = "squre"
+version = "0.1.0"
+edition = "2021"
+description = "World-class Rust obfuscation toolkit"
+
+[dependencies]
+squre-macro = { path = "../squre-macro" }
+squre-runtime = { path = "../squre-runtime" }
+squre-core = { path = "../squre-core" }

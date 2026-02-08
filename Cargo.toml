@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/squre-core",
+    "crates/squre-macro",
+    "crates/squre-runtime",
+    "crates/squre",
+    "crates/squre-cli",
+    "examples/basic",
+    "examples/vm_demo",
+    "examples/full_protection",
+    "examples/license_demo",
+    "examples/license_protected",
+    "examples/tidal_test",
+    "examples/virtualize_test",
+    "examples/1",
+    "examples/pe_check",
+    "tests/integration",
+]

@@ -1,0 +1,9 @@
+[package]
+name = "example-full-protection"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+squre = { path = "../../crates/squre" }
+squre-runtime = { path = "../../crates/squre-runtime" }
+squre-core = { path = "../../crates/squre-core" }

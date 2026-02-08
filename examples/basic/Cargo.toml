@@ -1,0 +1,8 @@
+[package]
+name = "example-basic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+squre = { path = "../../crates/squre" }
+squre-runtime = { path = "../../crates/squre-runtime" }

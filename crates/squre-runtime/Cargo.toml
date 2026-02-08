@@ -1,0 +1,25 @@
+[package]
+name = "squre-runtime"
+version = "0.1.0"
+edition = "2021"
+description = "Runtime support for SQURE obfuscation"
+
+[dependencies]
+squre-core = { path = "../squre-core" }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_SystemInformation",
+    "Win32_System_Performance",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Kernel",
+    "Win32_System_Memory",
+    "Win32_System_JobObjects",
+    "Win32_System_Pipes",
+    "Win32_Storage_FileSystem",
+    "Win32_Security",
+] }

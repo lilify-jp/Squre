@@ -1,0 +1,60 @@
+# Build artifacts
+/target/
+**/*.rs.bk
+**/target/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Test outputs
+*.protected.exe
+test_*.exe
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+
+# Attack/test scripts (development only)
+attack*.ps1
+attack*.py
+attack*.c
+*.attack.*
+decrypt_*.c
+decrypt_*.py
+full_attack.*
+full_decrypt.*
+analyze_*.py
+check_*.py
+compare*.py
+dump_*.py
+extract_*.c
+correct_*.c
+
+# Development docs
+ATTACK*.md
+WEAKNESS*.md
+TEST_RESULTS.md
+PROCESS.md
+TASK.md
+EXTREME_*.md
+
+# Ghidra exports
+ghidra/
+
+# Temp test files
+auto_test.bat
+build_hang_tests.bat
+find_threshold.bat
+final_test.sh
+compare.ps1

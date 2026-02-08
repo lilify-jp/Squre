@@ -1,0 +1,21 @@
+[package]
+name = "squre-cli"
+version = "0.1.0"
+edition = "2021"
+description = "SQURE binary post-processor CLI"
+
+[dependencies]
+squre-core = { path = "../squre-core" }
+clap = { version = "4", features = ["derive"] }
+rand = "0.8"
+rand_chacha = "0.3"
+iced-x86 = "1.21"  # x86-64 disassembler for VM protection
+
+# Build subcommand dependencies (source transformation)
+syn = { version = "2", features = ["full", "visit-mut", "parsing", "printing"] }
+quote = "1"
+proc-macro2 = "1"
+prettyplease = "0.2"
+toml_edit = "0.22"
+tempfile = "3"
+

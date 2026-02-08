@@ -1,0 +1,15 @@
+[package]
+name = "squre-macro"
+version = "0.1.0"
+edition = "2021"
+description = "Procedural macros for SQURE obfuscation"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full", "visit-mut"] }
+quote = "1"
+proc-macro2 = "1"
+squre-core = { path = "../squre-core" }
+rand = "0.8"
